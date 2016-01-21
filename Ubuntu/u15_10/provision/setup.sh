@@ -14,6 +14,9 @@ sudo apt-get install autoconf -y > /dev/null
 echo "Installing libX11"
 sudo apt-get install libx11-dev -y > /dev/null
 
+echo "Installing libXpm"
+sudo apt-get install libxpm-dev -y > /dev/null
+
 echo "Installing GENIE"
 git clone https://github.com/GENIEMC/lamp.git
 pushd lamp
