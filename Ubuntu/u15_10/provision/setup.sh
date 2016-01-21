@@ -17,6 +17,18 @@ sudo apt-get install libx11-dev -y > /dev/null
 echo "Installing libXpm"
 sudo apt-get install libxpm-dev -y > /dev/null
 
+echo "Installing libXft"
+sudo apt-get install libxft-dev -y > /dev/null
+
+echo "Installing libXext"
+sudo apt-get install libxext-dev -y > /dev/null
+
+echo "Installing libpng"
+sudo apt-get install libpng-dev -y > /dev/null
+
+echo "Installing libjpeg"
+sudo apt-get install libjpeg-dev -y > /dev/null
+
 echo "Installing GENIE"
 git clone https://github.com/GENIEMC/lamp.git
 pushd lamp
