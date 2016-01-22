@@ -32,6 +32,9 @@ sudo apt-get install libjpeg-dev -y > /dev/null
 echo "Installing libtool"
 sudo apt-get install libtool -y > /dev/null
 
+echo "Installing gfortran"
+sudo apt-get install gfortran -y > /dev/null
+
 echo "Installing GENIE"
 git clone https://github.com/GENIEMC/lamp.git
 pushd lamp
