@@ -32,4 +32,4 @@ sudo apt-get install libjpeg-dev -y > /dev/null
 echo "Installing GENIE"
 git clone https://github.com/GENIEMC/lamp.git
 pushd lamp
-./rub_the_lamp.sh -s
+./rub_the_lamp.sh -s --root v5-34-30
