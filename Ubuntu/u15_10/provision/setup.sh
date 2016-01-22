@@ -30,9 +30,9 @@ echo "Installing libjpeg"
 sudo apt-get install libjpeg-dev -y > /dev/null
 
 echo "Installing libtool"
-sudo apt-get install libtool -y /dev/null
+sudo apt-get install libtool -y > /dev/null
 
 echo "Installing GENIE"
 git clone https://github.com/GENIEMC/lamp.git
 pushd lamp
-./rub_the_lamp.sh -s --root v5-34-30
+./rub_the_lamp.sh -s --root v5-34-30 --support-tag head
