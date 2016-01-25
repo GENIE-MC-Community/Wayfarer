@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# make `debconf` use a frontend that exepcts no interactive input
+#  http://serverfault.com/questions/500764/dpkg-reconfigure-unable-to-re-open-stdin-no-file-or-directory
+sudo ex +"%s@DPkg@//DPkg" -cwq /etc/apt/apt.conf.d/70debconf
+sudo dpkg-reconfigure debconf -f noninteractive -p critical
+
 echo "Provisioning virtual machine..."
 
 echo "Updating apt-get"
@@ -11,7 +16,7 @@ sudo apt-get install git -y > /dev/null
 echo "Installing Subversion"
 sudo apt-get install subversion -y > /dev/null
 
-echo "Installing Subversion"
+echo "Installing autoconf"
 sudo apt-get install autoconf -y > /dev/null
 
 echo "Installing libX11"
