@@ -2,6 +2,9 @@
 
 echo "Provisioning virtual machine..."
 
+echo "Updating apt-get"
+sudo apt-get update > /dev/null
+
 echo "Installing Git"
 sudo apt-get install git -y > /dev/null
 
@@ -35,7 +38,14 @@ sudo apt-get install libtool -y > /dev/null
 echo "Installing gfortran"
 sudo apt-get install gfortran -y > /dev/null
 
+echo "Installing libxml2-dev"
+sudo apt-get install libxml2-dev -y > /dev/null
+
+echo "Installing gdb because reasons"
+sudo apt-get install gdb -y > /dev/null
+
 echo "Installing GENIE"
 git clone https://github.com/GENIEMC/lamp.git
 pushd lamp
-./rub_the_lamp.sh -s --root v5-34-30 --support-tag R-2_10_2.0
+git checkout new_repo_structure
+./rub_the_lamp.sh -s --root v5-34-30 --support-tag R-2_10_2.0 --no-roomu
