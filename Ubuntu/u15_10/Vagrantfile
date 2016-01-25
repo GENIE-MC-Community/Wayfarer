@@ -22,8 +22,9 @@ Vagrant.configure(2) do |config|
   config.vm.synced_folder "./", "/vagrant_data"
 
   # memory... virtualbox only?
+  # 4 GB - 2 GB was insufficient to start `gevgen`, but 4 may be overkill
   config.vm.provider "virtualbox" do |v|
-    v.memory = 2048
+    v.memory = 4096
   end
 
   # Define a Vagrant Push strategy for pushing to Atlas. Other push strategies
