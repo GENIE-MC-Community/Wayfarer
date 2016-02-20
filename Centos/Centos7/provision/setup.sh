@@ -8,10 +8,10 @@
 echo "Provisioning virtual machine..."
 
 echo "Updating yum"
-sudo yum update -y
+sudo yum update -y > /dev/null
 
 echo "Installing Git"
-sudo yum install git -y
+sudo yum install git -y > /dev/null
 
 echo "Installing Subversion"
 sudo yum install subversion -y > /dev/null
@@ -45,8 +45,8 @@ sudo yum install libjpeg-devel -y > /dev/null
 echo "Installing libtool"
 sudo yum install libtool -y > /dev/null
 
-echo "Installing gcc? installed, but no g++?"
-# sudo yum install gcc -y > /dev/null
+echo "Installing gcc-c++, because, yeah, that is not there by default."
+sudo yum install gcc-c++ -y > /dev/null
 
 echo "Installing gfortran"
 sudo yum install gcc-gfortran -y > /dev/null
