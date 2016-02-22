@@ -2,9 +2,9 @@ This is a collection of Vagrantfiles for testing GENIE builds on various OS's.
 
 ## READ ME FIRST!
 
-This version of `Wayfarer` is meant to work with GENIE `R-2_10_2`. If you would
-like to use an older version of GENIE, you will need to edit the `provision.sh`
-scripts found in each package.
+This version of `Wayfarer` is meant to work with GENIE `R-2_10_2` and later. If 
+you would like to use an older version of GENIE, you will need to edit the 
+`provision.sh` scripts found in each package.
 
 Also, users should be aware that there are some issues using ROOT5 with very new
 versions of the GCC compiler. The versions used here have been found to work, but
@@ -20,9 +20,9 @@ When first checking out this package, you will have the `HEAD` version of the
 `master` branch. You can get a specifc tagged release by checking out the tag
 into a branch like so
 
-    git checkout -b R-2_10_2.0-br R-2_10_2.0
+    git checkout -b R-2_10_4.0-br R-2_10_4.0
 
-This will checkout _tag_ `R-2_10_2.0` into _branch_ `R-2_10_2.0-br`. You want to
+This will checkout _tag_ `R-2_10_4.0` into _branch_ `R-2_10_4.0-br`. You want to
 checkout into a branch to avoid being in a "detached `HEAD`" state (although
 depending on your needs, this is not actually a major problem).
 
