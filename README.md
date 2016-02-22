@@ -45,9 +45,10 @@ Currently supported:
 
 * `Ubuntu/u14_04` ("trusty64")
 * `Ubuntu/u15_10` ("wiley64")
+* `Centos/Centos7` ("bento/centos-7.1")
 
 Note that what is _actually_ supported is `trusty64` and `wiley64`, and the
-specific numeric tags of Ubuntu that corresponds to that specification.
+specific numeric tags of Ubuntu that corresponds to that specification, etc.
 
 Some useful commands:
 
