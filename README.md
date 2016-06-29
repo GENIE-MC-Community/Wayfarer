@@ -57,3 +57,11 @@ Some useful commands:
 
 Much more is available on the [Vagrant](https://www.vagrantup.com) webpage
 and in other various tutorials available online.
+
+## Troubleshooting
+
+The original Pythia storage addresses at CERN changed and some of the various
+installation scripts used by GENIE have appropriately reacted, but older, tagged
+versions are likely pointing to the wrong place (older than Spring 2016). If
+you are having installation troubles, be sure to check the location of the Pythia6
+tar balls is correct in the scripts you are using.

@@ -52,4 +52,4 @@ sudo apt-get install gdb -y > /dev/null
 echo "Installing GENIE"
 git clone https://github.com/GENIEMC/lamp.git
 pushd lamp
-./rub_the_lamp.sh -s --root v5-34-30 --support-tag R-2_10_2.0 --no-roomu
+./rub_the_lamp.sh -s --root v5-34-30 --support-tag R-2_10_6.0 --no-roomu
