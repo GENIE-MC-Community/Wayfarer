@@ -74,4 +74,15 @@ that the guest additions are properly installed in the guest and can work
 properly." In this case, we need to be sure guest additions are installed.
 For virtual box:
 
-    vagrant plugin install vagrant-vbguest
+    $ vagrant plugin install vagrant-vbguest
+
+After this, if still having trouble, you may need 
+
+    $ vagrant vbguest
+    $ vagrant reload default
+
+If still having trouble (possible), then you may need to log into the newly
+created guest and hack away. It isn't clear to me how to fix these problems
+with VirtualBox Guest Additions from inside the Vagrantfile - you have to
+stop halfway fix these things inside the host before proceeding with the
+installation.
