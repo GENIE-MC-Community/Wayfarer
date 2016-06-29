@@ -65,3 +65,13 @@ installation scripts used by GENIE have appropriately reacted, but older, tagged
 versions are likely pointing to the wrong place (older than Spring 2016). If
 you are having installation troubles, be sure to check the location of the Pythia6
 tar balls is correct in the scripts you are using.
+
+### Vagrant Errors
+
+* You may get the error message: "Failed to mount folders in Linux guest.
+This is usually beacuse the 'vboxsf' file system is not available. Please verify
+that the guest additions are properly installed in the guest and can work
+properly." In this case, we need to be sure guest additions are installed.
+For virtual box:
+
+    vagrant plugin install vagrant-vbguest
